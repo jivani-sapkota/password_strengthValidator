@@ -10,9 +10,11 @@ checkBtn.addEventListener('click', ()=>{
     
    else if(guess==secretNumber){
         feedback.textContent="congrulations you guessed a number successfully";
+        document.querySelector('body').style.backgroundColor= "pink";
     }
    else if(guess> secretNumber){
         feedback.textContent="too high";
+    
     }
     else{
         feedback.textContent="too low";
